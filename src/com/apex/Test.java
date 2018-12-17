@@ -10,9 +10,19 @@ import org.glassfish.jersey.message.internal.MediaTypes;
 @Path("hello")
 public class Test {
 
+	@Path("hi")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getMessage() {
 		return "Jersy welcome....";
 	}
+	
+	@Path("bye")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getMessage1() {
+		return "Bye Jersy";
+	}
+	
+	
 }
